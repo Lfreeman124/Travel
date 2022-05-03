@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./demo.css" />
+  </head>
+  <body>
+    <h1>Hello! This is our demo</h1>
+    <!-- Images used to open the lightbox -->
+    <div class="row">
+      <div class="column">
+        <img
+          src="./photos/Antigua/Antigua1.jpg"
+          onclick="openModal();currentSlide(1)"
+          class="hover-shadow"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="./photos/Bangkok/Bangkok1.jpg"
+          onclick="openModal();currentSlide(2)"
+          class="hover-shadow"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="./photos/Bodrum/Bodrum1.jpg"
+          onclick="openModal();currentSlide(3)"
+          class="hover-shadow"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="./photos/Rome/Rome1.jpg"
+          onclick="openModal();currentSlide(4)"
+          class="hover-shadow"
+        />
+      </div>
+    </div>
+
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <div class="header-text">
+            <h1 id="city-name">Antigua</h1>
+          </div>
+          <img src="./photos/Antigua/Antigua2.jpg" style="width: 100%" />
+          <div><p id="blurb">This is our blurb</p></div>
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="./photos/Bangkok/Bangkok2.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="./photos/Bodrum/Bodrum2.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="./photos/Rome/Rome2.jpg" style="width: 100%" />
+        </div>
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- 
+         Thumbnail image controls 
+        <div class="column">
+          <img
+            class="demo"
+            src="./photos/Antigua/Antigua3.jpg"
+            onclick="currentSlide(1)"
+            alt="Nature"
+          />
+        </div>
+
+        <div class="column">
+          <img
+            class="demo"
+            src="./photos/Bangkok/Bangkok3.jpg"
+            onclick="currentSlide(2)"
+            alt="Snow"
+          />
+        </div>
+
+        <div class="column">
+          <img
+            class="demo"
+            src="./photos/Bodrum/Bodrum3.jpg"
+            onclick="currentSlide(3)"
+            alt="Mountains"
+          />
+        </div>
+
+        <div class="column">
+          <img
+            class="demo"
+            src="./photos/Rome/Rome3.jpg"
+            onclick="currentSlide(4)"
+            alt="Lights"
+          />
+        </div> -->
+      </div>
+    </div>
+    <script src="./demo.js"></script>
+  </body>
+</html>
