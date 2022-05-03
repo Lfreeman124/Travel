@@ -16,6 +16,7 @@ const travelData = {
     },
   ],
 };
+
 const cityName = document.getElementById("city-name");
 cityName.innerText = travelData.city[0].country;
 
